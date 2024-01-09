@@ -10,42 +10,61 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: sans-serif;
-    background-image: url("./stalker\ wall.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+    background-color: #333;
 }
 
-h1, .task, .btn-box {
+h1 {
+    padding: 5px;
+    font-size: 23px;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+}
+
+ h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+h1, h2, .task, .btn-box {
     padding: 10px;
+}
+
+.h2 {
+    text-align: center;
+    font-size: 23px;
 }
 
 .task {
     margin: 10px;
-    text-align: center;
+    padding: 15px;
+    text-align: left;
     width: 300px;
-    height: 300px;
-    background-color: #fff;
+    height: 75px;
+    color: #fff;
+    background-color: rgb(16, 50, 16);
 }
 
 .btn-box{
     display: flex;
-    flex-direction: column;
     align-items: start;
 }
 
 .btn {
-    margin-top: 10px;
+    margin: 10px;
     width: 150px;
     height: 30px;
     cursor: pointer;
 }
 
-.hide {
-    display: none;
-}
-
-.active {
-    display: block;
+@media(max-width: 768px) {
+    body {
+        background-image: url("./stalker\ wall.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
 }
